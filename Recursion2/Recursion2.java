@@ -1,6 +1,6 @@
 import java.util.*;
-class Recursion1{
-    static void recursion(int m, int n){
+class Recursion2{
+    static void recursion(String m, int n){
 
         System.out.println(m);
         n-=1;
@@ -12,8 +12,8 @@ class Recursion1{
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("What number do you want to print : ");
-        int a = sc.nextInt();
+        System.out.print("What name do you want to print : ");
+        String a = sc.next();
         System.out.print("How many times do you want to print that number : ");
         int b = sc.nextInt();
         recursion(a,b);
