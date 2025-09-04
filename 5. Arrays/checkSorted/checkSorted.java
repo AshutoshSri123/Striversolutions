@@ -1,3 +1,4 @@
+import java.util.*;
 class checkSorted {
     static boolean isSorted(int arr[], int n) {
         for (int i = 0; i < n; i++) {
@@ -11,8 +12,13 @@ class checkSorted {
     }
 
     public static void main(String args[]) {
-        int arr[] = {1, 2, 3, 4, 5}, n = 5;
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int[] arr = new int[a];
+        for(int i=0; i<a; i++){
+            arr[i] = sc.nextInt();
+        }
 
-        System.out.println(isSorted(arr, n));
+        System.out.println(isSorted(arr, a));
     }
 }
